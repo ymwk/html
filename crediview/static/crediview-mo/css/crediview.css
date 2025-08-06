@@ -5735,10 +5735,6 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   padding-right: var(--spc-w);
 }
 
-.console-content {
-  flex-grow: 1;
-}
-
 .console-title {
   display: flex;
   align-items: flex-start;

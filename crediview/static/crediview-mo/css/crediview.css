@@ -5693,8 +5693,8 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 }
 
 .console-root, .members-root {
-  min-height: 100vh;
-  min-height: 100svh;
+  height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -5721,20 +5721,17 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
     transform: translateX(-100%);
   }
 }
-.console-container {
+.console-container, .members-container {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: auto;
 }
 
 .console-inner {
-  position: relative;
   flex: 1;
-  display: flex;
-  gap: var(--side-gap);
-  width: 100%;
+  position: relative;
+  padding-top: var(--header-h);
   padding-left: var(--spc-w);
   padding-right: var(--spc-w);
 }
@@ -5810,9 +5807,6 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 }
 
 .members-root {
-  height: 100vh;
-  height: 100svh;
-  height: unset;
   overflow: hidden;
 }
 .members-root form {
@@ -5836,9 +5830,6 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 }
 
 .members-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   padding-left: var(--spc-w);
   padding-right: var(--spc-w);
   overflow-y: auto;

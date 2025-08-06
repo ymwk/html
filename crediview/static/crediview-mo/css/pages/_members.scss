@@ -5,9 +5,6 @@
 
 .members-root {
   @extend .console-root;
-  height: 100vh;
-  height: 100svh;
-  height: unset;
   overflow: hidden;
 
   form {
@@ -33,12 +30,10 @@
 }
 
 .members-container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
+  @extend .console-container;
   padding-left: var(--spc-w);
   padding-right: var(--spc-w);
-  overflow-y: auto
+  overflow-y: auto;
 }
 
 .members-footer {

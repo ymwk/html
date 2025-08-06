@@ -1,0 +1,232 @@
+.SOLBtn-root {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  height: var(--form-h);
+  padding: 0 var(--form-pd);
+  border-radius: var(--form-round);
+  border: 1px solid rgba(10, 43, 88, 0.18);
+  background-color: #fff;
+  font-size: var(--font-14);
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--fc-default);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: color 0.2s, background-color 0.2s;
+
+  &:focus, &:active {
+    background-color: var(--form-c-bg-dis);
+
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: transparent;
+    color: rgba(55, 56, 60, 0.28);
+    border-color: rgba(112, 115, 124, 0.28);
+    box-shadow: none;
+  }
+
+  // type
+  &.t {
+    &--contained {
+      background-color: var(--c-active);
+      color: #fff;
+      border: 0;
+      box-shadow: none;
+
+      &:focus, &:active {
+        background-color: #365ecd;
+      }
+      &.focus {
+        background-color: #365ecd;
+      }
+
+      &:disabled,
+      &.disabled {
+        background-color: #f4f4f5;
+        color: rgba(55, 56, 60, 0.28);
+      }
+    }
+
+    &--outlined {
+      color: var(--c-active);
+      border-color: currentColor;
+      box-shadow: none;
+
+      &:disabled,
+      &.disabled {
+        background-color: transparent;
+        border: 1px solid rgba(10, 43, 88, 0.1);
+        color: rgba(55, 56, 60, 0.28);
+      }
+
+      &:focus, &:active {
+        background-color: var(--bc-hover);
+      }
+    }
+
+    &--inverse {
+      border-color: rgba(255, 255, 255, 0.3);
+      background-color: transparent;
+      color: #fff;
+
+      &:focus, &:active {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      &:disabled,
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  // icon only
+  &.t--icon {
+    padding: 0;
+    width: var(--form-h);
+  }
+
+  // size
+  &.s {
+    &--lg {
+      height: 48px;
+      font-size: var(--font-16);
+    }
+
+    &--sm {
+      height: 30px;
+      padding: 0 10px;
+      font-size: var(--font-13);
+    }
+  }
+
+  //width`
+  &.w {
+    &--full {
+      flex: 1;
+      &:only-child { width: 100% }
+    }
+    &--btm { min-width: 156px}
+  }
+
+  &.bottom {
+    border: none;
+  }
+
+  &.add-btn {
+    position: relative;
+    padding: 0 1em 0 34px;
+    &::before {
+      content: "+";
+      font-size: var(--font-28);
+      font-weight: 100;
+      position: absolute;
+      top: 44%;
+      transform: translate(0, -50%);
+      left: 12px;
+    }
+  }
+}
+
+.SOLIconBtn-root {
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4em;
+  height: 2rem;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0 0.5em;
+  border-radius: var(--form-round);
+  border: 0;
+  background-color: transparent;
+  font-size: var(--font-14);
+  white-space: nowrap;
+  transition: color 0.2s, background-color 0.2s;
+  color: inherit;
+
+  &.s {
+    &--lg {
+      font-size: var(--font-16);
+    }
+  }
+
+  &.c {
+    &--dark {
+      color: var(--fc-default);
+    }
+    &--light {
+      color: var(--fc-gray2);
+    }
+  }
+
+  &:focus, &:active {
+    color: var(--fc-default);
+  }
+
+  // &:hover:not(:disabled),
+  // &:focus {
+  //     color: rgba(77,124,254,0.1)
+  // }
+
+  &:disabled,
+  &.disabled {
+    color: rgba(34, 34, 34, 0.2);
+    cursor: not-allowed;
+  }
+
+  i + i {
+    margin-left: -15px;
+  }
+}
+
+.SOLTextBtn-root {
+  height: 24px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: var(--font-13);
+  text-decoration: underline;
+  color: var(--fc-gray1);
+  transition: color 0.2s, background-color 0.2s;
+  white-space: nowrap;
+
+  &:focus, &:active {
+    color: var(--fc-default);
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: 0.4;
+  }
+
+  &.t {
+    &--action {
+      color: var(--c-active);
+
+      &:focus, &:active {
+        color: var(--c-active);
+        background-color: var(--bc-hover);
+      }
+    }
+    &--inverse {
+      color: #fff;
+
+      &:focus, &:active {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  &.s {
+    &--sm {
+      font-size: var(--font-12);
+    }
+  }
+}

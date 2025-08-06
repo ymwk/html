@@ -5286,7 +5286,7 @@ table .SOLCheck-root {
   position: fixed;
   inset: 0;
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   min-width: var(--min-w);
   max-width: var(--max-w);
   margin: 0 auto;
@@ -5694,7 +5694,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 
 .console-root, .members-root {
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -5811,7 +5811,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 
 .members-root {
   height: 100vh;
-  height: 100dvh;
+  height: 100svh;
   height: unset;
   overflow: hidden;
 }

@@ -7,6 +7,7 @@
   @extend .console-root;
   height: 100vh;
   height: 100dvh;
+  height: unset;
   overflow: hidden;
 
   form {

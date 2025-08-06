@@ -5725,7 +5725,6 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .console-inner {

@@ -24,6 +24,7 @@
 }
 
 .console-footer {
+  z-index: 99;
   position: sticky;
   bottom: 0;
   flex-shrink: 0;
@@ -33,16 +34,14 @@
   padding: 20px 20px 34px;
   background-color: #fff;
 
-  .SOLIconBtn-root {
-    position: absolute;
-    right: 20px;
-    bottom: 100px
+  .SOLBtn-root {
+    position: relative
   }
 }
 
-.footerBtn-top {
+.footer-topBtn {
   position: absolute;
-  bottom: 100%;
+  bottom: 40px;
   right: var(--spc-w);
   display: inline-flex;
   align-items: center;
@@ -53,7 +52,15 @@
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
-  color: #8B8B8B
+  color: #8B8B8B;
+  opacity: 0;
+  overflow: hidden;
+  transition: bottom .2s, opacity .2s;
+
+  &.show {
+    opacity: 1;
+    bottom: 100%;
+  }
 }
 
 // .console-content {

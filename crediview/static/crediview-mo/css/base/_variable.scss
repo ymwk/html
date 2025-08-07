@@ -1,6 +1,7 @@
 :root {
   // color
-  --fc-default: #222;
+  color: #1D2129;
+  --fc-default: #1D2129;
   --fc-gray1: #7b7b7b;
   --fc-gray2: #9b9ba0;
   --fc-rating: #1e479f;
@@ -36,9 +37,9 @@
   --side-gap: 40px;
   --max-w-ld: 1102px;
   --max-w-auto: auto;
-  --max-h: 100vh;
 
   //font size
+  font-size: 14px;
   --font-14: 1rem;
   --font-9: 0.64rem;
   --font-11: 0.79rem;

@@ -13,7 +13,7 @@
   }
 
   &.st--open .SOLAccordian-body {
-    max-height: 400px;
+    max-height: 350px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -889,13 +889,16 @@
 .service-terms {
   border: 1px solid var(--tb-border);
   border-radius: 8px;
-  padding: 16px;
+  padding: 16px 16px 6px;
 }
 
 .service-terms-header {
   padding-bottom: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   border-bottom: 1px solid var(--tb-border);
+  .t--terms-md .SOLCheck-label {
+    font-size: var(--font-16);
+  }
 }
 
 .service-terms-item {
@@ -903,7 +906,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 6px 0;
-  margin: 4px 0;
   font-size: var(--font-16);
 
   .SOLIconBtn-root {
@@ -912,6 +914,9 @@
     &:active {
       color: inherit;
     }
+  }
+  .t--terms-md .SOLCheck-label {
+    font-size: var(--font-14);
   }
 }
 
@@ -922,3 +927,5 @@
   margin: 4px 0;
   font-size: var(--font-16);
 }
+
+// SOLCheck-root t--terms-md

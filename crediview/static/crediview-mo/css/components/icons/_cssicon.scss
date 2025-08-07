@@ -329,7 +329,8 @@
 
   &-alarm {
     width: 22px;
-    background: url(/html/crediview/static/crediview-mo/image/icon/ic_alarm.svg) no-repeat center center / contain;
+    background: url(/html/crediview/html/crediview/static/crediview-mo/image/icon/ic_alarm.svg) no-repeat center center /
+      contain;
   }
 
   &-hamburger {
@@ -445,6 +446,7 @@
   }
 
   &.c--active {
-    background: url(/html/crediview/static/crediview-mo/image/icon/ic_alert_active.svg) no-repeat center center / cover;
+    background: url(/html/crediview/html/crediview/static/crediview-mo/image/icon/ic_alert_active.svg) no-repeat center
+      center / cover;
   }
 }

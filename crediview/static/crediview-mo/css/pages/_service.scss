@@ -133,7 +133,7 @@
   // justify-content: center;
   text-align: center;
   // padding-bottom: 15vh;
-  padding-top: 24px
+  padding-top: 24px;
 }
 
 .service-result-desc {
@@ -187,8 +187,8 @@
 
   &.t--issue {
     background-image: url(/html/crediview/static/crediview-mo/image/img/bg_issue_progress.png);
-    background-size: 326px
-   }
+    background-size: 326px;
+  }
 
   .progress {
     position: relative;
@@ -219,7 +219,7 @@
   .msg {
     margin-top: 20px;
     font-size: var(--font-12);
-    color: var(--c-active)
+    color: var(--c-active);
   }
 }
 
@@ -330,7 +330,7 @@
   justify-content: center;
   align-items: center;
   padding: 28px;
-  background-color: #F2F3F7;
+  background-color: #f2f3f7;
 
   .rating {
     font-size: var(--font-42);
@@ -349,7 +349,7 @@
 
   .msg {
     font-size: var(--font-30);
-    font-weight: 700
+    font-weight: 700;
   }
 }
 
@@ -363,8 +363,9 @@
   width: 222px;
   height: 144px;
   border: 9px solid #fff;
-  background: #fff url(/html/crediview/static/crediview-mo/image/img/img_rating_border.svg) no-repeat left top / 100% 100%;
-  box-shadow: 3px 6px 8px 0px #14193A0F;
+  background: #fff url(/html/crediview/static/crediview-mo/image/img/img_rating_border.svg) no-repeat left top / 100%
+    100%;
+  box-shadow: 3px 6px 8px 0px #14193a0f;
   line-height: 1;
 
   &.t--mark::after {
@@ -380,7 +381,10 @@
   &.t--disabled {
     color: var(--c-disabled);
 
-    .company, .rating { color: inherit }
+    .company,
+    .rating {
+      color: inherit;
+    }
   }
 
   .tit {
@@ -389,8 +393,8 @@
   }
 
   .company {
-    color: #243F64;
-    font-size: var(--font-11)
+    color: #243f64;
+    font-size: var(--font-11);
   }
 }
 
@@ -404,7 +408,9 @@
     min-width: 300px;
     white-space: nowrap;
 
-    th { padding-right: 50px }
+    th {
+      padding-right: 50px;
+    }
   }
 }
 
@@ -446,12 +452,12 @@
   .desc {
     color: var(--fc-gray2);
     font-size: var(--font-13);
-    line-height: 1.4
+    line-height: 1.4;
   }
-  
+
   .desc2 {
     font-size: var(--font-14);
-    padding: 0.5em 0
+    padding: 0.5em 0;
   }
 }
 
@@ -487,7 +493,7 @@
     display: block;
     width: 100%;
     height: 126px;
-    margin-bottom: -5px
+    margin-bottom: -5px;
   }
 }
 
@@ -506,7 +512,7 @@
     height: 32px;
     padding: 0 12px;
     border-radius: 7px;
-    background-color: #182A50;
+    background-color: #182a50;
     font-size: var(--font-16);
     font-weight: 700;
     color: #fff;
@@ -520,7 +526,7 @@
       top: 100%;
       left: 50%;
       border-style: solid;
-      border-color: #182A50 transparent transparent transparent;
+      border-color: #182a50 transparent transparent transparent;
       border-width: 5px 4px;
       transform: translateX(-50%);
     }
@@ -558,7 +564,7 @@
       justify-content: space-between;
       padding: 0 2px;
       line-height: 1.82;
-      padding-top: 6px
+      padding-top: 6px;
     }
 
     &:first-of-type .bar {
@@ -633,10 +639,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
-    border-top: 1px solid var(--tb-border)
+    border-top: 1px solid var(--tb-border);
   }
 
-  .SOLIcon-root { width: 1em }
+  .SOLIcon-root {
+    width: 1em;
+  }
 }
 
 .service-payment-coupon {
@@ -734,10 +742,14 @@
     .value {
       font-size: var(--font-15);
 
-      em { font-size: var(--font-18) }
+      em {
+        font-size: var(--font-18);
+      }
     }
 
-    .name em { font-size: var(--font-16) }
+    .name em {
+      font-size: var(--font-16);
+    }
   }
   .item-discount {
     color: var(--c-error);
@@ -758,11 +770,11 @@
   .SOLCheck-root .SOLCheck-label {
     font-size: var(--font-14);
     line-height: 1.4;
-    color: #404252
+    color: #404252;
   }
 
   .service-terms-item {
-    margin: -12px 0
+    margin: -12px 0;
   }
 }
 
@@ -945,11 +957,11 @@
   }
 
   .SOLIconBtn-root:last-child {
-    margin-right: -6px
+    margin-right: -6px;
   }
 
   &:last-child:not(:only-child) {
-    margin-bottom: 6px
+    margin-bottom: 6px;
   }
 }
 
@@ -983,7 +995,7 @@
 
     .date {
       font-size: var(--font-12);
-      color: var(--fc-gray1)
+      color: var(--fc-gray1);
     }
 
     .label {
@@ -999,7 +1011,7 @@
       font-size: var(--font-13);
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 50%;
         left: 50%;
@@ -1021,10 +1033,13 @@
 
   .disabled {
     border-color: transparent;
-    .name, .date { opacity: 0.4 }
+    .name,
+    .date {
+      opacity: 0.4;
+    }
     .label {
       filter: grayscale(100%);
-      color: rgba(34,34,34,0.3);
+      color: rgba(34, 34, 34, 0.3);
     }
   }
 }

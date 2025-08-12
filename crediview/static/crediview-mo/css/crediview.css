@@ -6462,7 +6462,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   justify-content: center;
   align-items: center;
   padding: 28px;
-  background-color: #F2F3F7;
+  background-color: #f2f3f7;
 }
 .service-result-rating .rating {
   font-size: var(--font-42);
@@ -6508,7 +6508,8 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 .service-result-paper.t--disabled {
   color: var(--c-disabled);
 }
-.service-result-paper.t--disabled .company, .service-result-paper.t--disabled .rating {
+.service-result-paper.t--disabled .company,
+.service-result-paper.t--disabled .rating {
   color: inherit;
 }
 .service-result-paper .tit {
@@ -6516,7 +6517,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   font-weight: 700;
 }
 .service-result-paper .company {
-  color: #243F64;
+  color: #243f64;
   font-size: var(--font-11);
 }
 
@@ -6625,7 +6626,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   height: 32px;
   padding: 0 12px;
   border-radius: 7px;
-  background-color: #182A50;
+  background-color: #182a50;
   font-size: var(--font-16);
   font-weight: 700;
   color: #fff;
@@ -6639,7 +6640,7 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
   top: 100%;
   left: 50%;
   border-style: solid;
-  border-color: #182A50 transparent transparent transparent;
+  border-color: #182a50 transparent transparent transparent;
   border-width: 5px 4px;
   transform: translateX(-50%);
 }
@@ -7085,7 +7086,8 @@ footer.SOLFooter-root.t--white .SOLFooter-bottom .footer-logo {
 .service-coupon-list .disabled {
   border-color: transparent;
 }
-.service-coupon-list .disabled .name, .service-coupon-list .disabled .date {
+.service-coupon-list .disabled .name,
+.service-coupon-list .disabled .date {
   opacity: 0.4;
 }
 .service-coupon-list .disabled .label {

@@ -1,15 +1,25 @@
 .SOLSelectGroup-root {
   display: flex;
+  flex-direction: column;
   gap: 8px;
+  margin-bottom: 6px;
 
   &.t--min {
+    flex-direction: row;
+
     .SOLSelectGroup-label {
-      gap: 10px;
+      flex-direction: column;
+      gap: 0;
+      text-align: center;
 
       input[type="radio"] {
         position: absolute;
         opacity: 0;
         z-index: -1;
+      }
+
+      .SOLTitle-t4 {
+        font-size: var(--font-16)
       }
     }
   }
@@ -28,8 +38,9 @@
   gap: 18px;
   padding: 16px;
   border: 1px solid var(--tb-border);
-  border-radius: 8px;
+  border-radius: 12px;
   line-height: 1.5;
+  font-size: var(--font-13);
   transition: border-color 0.2s;
 
   input[type="radio"] {
@@ -91,10 +102,10 @@
 
   .ico {
     flex-shrink: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--bc-hover) no-repeat center center / 80%;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: no-repeat center center / contain;
   }
 
   .ico-card {

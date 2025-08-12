@@ -102,7 +102,7 @@
       </header>
 
       <div class="console-container">
-        <div class="console-inner">
+        <div class="section-outer">
           <!-- 서비스 프로세스 -->
           <section class="service-guide js-accordian-root">
             <div class="service-guide-title">
@@ -146,14 +146,17 @@
             <ul class="SOLStepper-root t--service">
               <li class="active"><span class="tit">이용약관 동의</span></li>
               <li><span class="tit">신청서 작성</span></li>
-              <li><span class="tit">신용평가</span></li>
+              <li><span class="tit">신용등급 확인</span></li>
             </ul>
 
-            <div class="section-header">
+            <div class="service-header">
               <h3 class="SOLTitle-headline">서비스 이용을 위해 <br />이용약관에 동의해 주세요.</h3>
               <p class="SOLText-note">서비스 이용을 위해서 꼭 필요한 사항입니다.</p>
             </div>
+          </section>
 
+          <section class="console-section">
+            <h3 class="blind">약관 항목</h3>
             <div class="service-terms">
               <div class="service-terms-header">
                 <div class="SOLCheck-root t--terms s--lg">
@@ -171,7 +174,7 @@
                   <label class="SOLCheck-label">
                     <input type="checkbox" name="" />
                     <span>
-                      <span class="c--require">[필수]</span>
+                      <span>[필수]</span>
                       개인정보 수집 및 이용에 관한 동의
                     </span>
                   </label>
@@ -188,7 +191,7 @@
                   <label class="SOLCheck-label">
                     <input type="checkbox" name="" />
                     <span>
-                      <span class="c--require">[필수]</span>
+                      <span>[필수]</span>
                       기업정보 수집·활용·제3자 제공 동의
                     </span>
                   </label>
@@ -205,7 +208,7 @@
                   <label class="SOLCheck-label">
                     <input type="checkbox" name="" />
                     <span>
-                      <span class="c--require">[필수]</span>
+                      <span>[필수]</span>
                       크레디뷰 서비스 이용약관
                     </span>
                   </label>
@@ -221,8 +224,8 @@
                 <div class="SOLCheck-root t--terms-md">
                   <label class="SOLCheck-label">
                     <input type="checkbox" name="" />
-                    <span
-                      ><span class="c--disabled">[선택]</span>
+                    <span>
+                      <span>[선택]</span>
                       기업정보 수집 · 활용 · 제3자 제공
                     </span>
                   </label>
@@ -237,12 +240,15 @@
           </section>
 
           <section class="console-section">
-            <h3 class="SOLTitle-t3">유의사항</h3>
-            <div class="box-msg">
+            <div class="console-section-header">
+              <h3 class="SOLTitle-t3">유의사항</h3>
+            </div>
+
+            <div class="box-msg mb-24">
               <div class="msg-terms">
                 <p>
-                  <em
-                    >당사 신용평가시스템은 국세청 신고자료,<br />
+                  <em>
+                    당사 신용평가시스템은 국세청 신고자료,<br />
                     회계프로그램의 기장정보를 근거로 산출됩니다.<br />
                     이에 따라, 아래의 경우<br />
                     신용등급이 산출되지 않을 수 있습니다.
@@ -265,15 +271,18 @@
           </section>
         </div>
       </div>
+      <!-- //console-container -->
 
       <div class="console-footer">
         <a class="footer-topBtn" href="#top">
           <i class="SOLIcon-root SOLIcon-arr--t"></i>
           <span class="blind">Scroll to Top</span>
         </a>
-        <button type="button" class="SOLBtn-root t--contained s--lg w--full" disabled>다음</button>
+        <div class="console-footer-btns">
+          <!-- <button type="button" class="SOLBtn-root t--contained s--lg w--full" disabled>다음</button> -->
+          <a href="issue-own.html" class="SOLBtn-root t--contained s--lg w--full disabled">다음</a>
+        </div>
       </div>
-      <!-- console-container -->
     </div>
 
     <!-- component js -->

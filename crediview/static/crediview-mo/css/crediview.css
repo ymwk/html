@@ -6258,6 +6258,7 @@ table .SOLCheck-root {
   color: var(--fc-gray2);
   font-weight: 400;
   text-align: left;
+  white-space: nowrap;
 }
 .SOLTable-small td {
   height: 28px;

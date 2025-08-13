@@ -206,29 +206,47 @@ document.addEventListener('DOMContentLoaded', function () {
   const menuBtn = document.querySelector('.SOLHeader-menuBtn');
   const gnb = document.querySelector('.SOLHeader-nav');
   const closeBtn = document.querySelector('.SOLHeader-closeBtn');
+  let currentY = window.scrollY || 0;
 
   menuBtn.addEventListener('click', function () {
+    currentY = window.scrollY;
     gnb.classList.add('open');
-    document.querySelector('body').classList.add('lock');
+
+    // 전체메뉴 오픈시 body class 추가
+    document.body.classList.add('fixed');
+    // body 위치 고정
+    document.body.style.cssText = `top: -${currentY}px`;
   });
 
   closeBtn.addEventListener('click', function () {
+    const scrollY = document.body.style.top;
     gnb.classList.remove('open');
-    document.querySelector('body').classList.remove('lock');
+
+    document.body.classList.remove('fixed');
+    document.body.style.cssText = '';
+    window.scrollTo({
+      top: parseInt(scrollY || '0', 10) * -1,
+    });
   });
-});
 
+  // scroll header
+  const header = document.querySelector('.SOLHeader-root');
+  // top button
+  const topBtn = document.querySelector('.footer-topBtn');
+  let beforeScrollY = window.scrollY || 0;
 
-// scroll header
-const header = document.querySelector('.SOLHeader-root');
-// top button
-const topBtn = document.querySelector('.footer-topBtn');
-let beforeScrollY = window.scrollY || 0;
+  window.addEventListener('scroll', function () {
+    let currentScrollY = window.scrollY;
+    header.classList.toggle('sticky', beforeScrollY < currentScrollY && 50 < currentScrollY);
+    beforeScrollY = currentScrollY;
 
-window.addEventListener('scroll', function () {
-  let currentScrollY = window.scrollY;
-  header.classList.toggle('sticky', beforeScrollY < currentScrollY && 50 < currentScrollY);
-  beforeScrollY = currentScrollY;
-  
-  topBtn.classList.toggle('show', 100 < currentScrollY);
+    topBtn.classList.toggle('show', 100 < currentScrollY);
+  });
+
+  topBtn.addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
 });

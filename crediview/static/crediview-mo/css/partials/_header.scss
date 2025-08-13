@@ -1,7 +1,7 @@
 // 20250730
 
 .SOLHeader-root {
-  z-index: 999;
+  z-index: 1002;
   position: fixed;
   top: 0;
   left: 50%;
@@ -21,6 +21,13 @@
       .SOLHeader-inner {
         color: #fff;
       }
+
+      .SOLHeader-logo .logo:not(.SOLHeader-nav .logo) {
+        .eng { background-image: url(../../Common/image/crediview/logo/bi_crediview_w.svg) }
+        .kr { background-image: url(../../Common/image/crediview/logo/bi_crediview_w_kr.svg) }
+      }
+
+      .SOLHeader-global-link { border-color: rgba(255,255,255,0.2)}
     }
   }
 
@@ -204,7 +211,7 @@
       content: '';
       width: 47px;
       height: 24px;
-      background: url(/html/crediview/static/crediview-mo/image/icon/ic_nav_open.svg) no-repeat left top;
+      background: url(../image/icon/ic_nav_open.svg) no-repeat left top;
     }
   }
 

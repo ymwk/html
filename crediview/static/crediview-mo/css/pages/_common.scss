@@ -68,7 +68,7 @@
   justify-content: center;
   min-height: 24px;
   padding-left: 32px;
-  background: url(/html/crediview/static/crediview-mo/image/icon/ic_msg_noti.svg) no-repeat left center;
+  background: url(../image/icon/ic_msg_noti.svg) no-repeat left center;
 
   li::before {
     content: '·';
@@ -96,6 +96,7 @@
 .hr-comm {
   border: 0;
   border-top: 1px solid rgba(101, 112, 144, 0.1);
+  margin: 8px 0;
 }
 
 // 8배수

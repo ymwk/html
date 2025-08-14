@@ -685,87 +685,19 @@ textarea {
     transform: translateY(0);
   }
 }
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -775,52 +707,18 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-div::before, div::after,
-p::before,
-p::after,
-span::before,
-span::after,
+div::before, div::after, p::before, p::after, span::before, span::after,
 dl::before,
-dl::after,
-dt::before,
-dt::after,
-dd::before,
-dd::after,
-ol::before,
-ol::after,
-ul::before,
-ul::after,
-li::before,
-li::after,
-button::before,
-button::after,
-a::before,
-a::after,
-input::before,
-input::after,
-i::before,
-i::after {
+dl::after, dt::before, dt::after, dd::before, dd::after, ol::before, ol::after, ul::before, ul::after, li::before, li::after, button::before, button::after, a::before, a::after, input::before, input::after, i::before, i::after {
   box-sizing: border-box;
 }
 
-input,
-button,
-a,
-textarea {
+input, button, a, textarea {
   box-sizing: border-box;
 }
 
@@ -828,8 +726,7 @@ body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   font-size: 14px;
   letter-spacing: -0.01em;
@@ -850,8 +747,7 @@ body {
   background-color: #bbb;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
@@ -3035,6 +2931,7 @@ button.swiper-pagination-bullet {
   line-height: 18px;
   font-size: var(--font-14);
   text-align: left;
+  word-break: keep-all;
 }
 .SOLCheck-root.mgt-15 {
   margin-top: 15px;
@@ -3059,6 +2956,9 @@ button.swiper-pagination-bullet {
 }
 .SOLCheck-root.t--terms [type=checkbox] {
   border-radius: 50%;
+}
+.SOLCheck-root.t--terms .SOLCheck-label {
+  align-items: center;
 }
 .SOLCheck-root.t--terms-md .SOLCheck-label {
   font-size: var(--font-15);
@@ -4248,6 +4148,53 @@ table .SOLCheck-root {
 .SOLStepper-root.t--service .tit {
   display: none;
 }
+.SOLStepper-root.t--submit {
+  gap: 28px;
+  padding: 0;
+  margin-bottom: 20px;
+  color: var(--font-default);
+  background-color: unset;
+  counter-reset: index;
+  margin-top: 0;
+  font-size: var(--font-13);
+}
+.SOLStepper-root.t--submit > li {
+  flex: unset;
+  flex-direction: row;
+  gap: 4px;
+  white-space: nowrap;
+  text-align: left;
+}
+.SOLStepper-root.t--submit > li::before {
+  counter-increment: index;
+  content: counter(index);
+  width: 16px;
+  height: 16px;
+  background: #D9D9D9 !important;
+  color: var(--fc-gray2);
+  font-size: 10px;
+  color: #fff !important;
+  font-weight: 600;
+}
+.SOLStepper-root.t--submit > li:not(:first-of-type)::after {
+  top: 50%;
+  left: -18px;
+  right: unset;
+  margin-top: -4px;
+  width: 7px;
+  height: 7px;
+  border-top: 0;
+  border-right: 1px solid rgba(17, 17, 17, 0.3);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+  transform: rotate(-45deg);
+}
+.SOLStepper-root.t--submit > li.active {
+  color: var(--c-active);
+}
+.SOLStepper-root.t--submit > li.active::before {
+  font-weight: 400;
+  background: var(--c-component) !important;
+}
 
 .stepper-label {
   display: block;
@@ -5104,6 +5051,9 @@ table .SOLCheck-root {
   font-weight: 700;
   color: var(--fc-default);
 }
+.SOLSnackbar-header .SOLSnackbar-title em {
+  color: var(--c-active);
+}
 .SOLSnackbar-header .note {
   position: absolute;
   top: 50%;
@@ -5748,6 +5698,9 @@ table .SOLCheck-root {
   display: flex;
   align-items: center;
 }
+.gnb-menu a.on {
+  color: #3b5dfb;
+}
 .gnb-menu .ai-post {
   gap: 8px;
 }
@@ -5803,9 +5756,6 @@ table .SOLCheck-root {
 }
 .gnb-menu .sub-menu.depth02 a {
   height: 42px;
-}
-.gnb-menu .sub-menu.depth02 a.on {
-  color: #3b5dfb;
 }
 
 .logout-box {
@@ -6082,6 +6032,15 @@ table .SOLCheck-root {
 .box-msg .title em {
   color: var(--c-active);
 }
+.box-msg .SOLIconBtn-root {
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.box-msg .SOLIconBtn-root .SOLIcon-root {
+  color: #95989b;
+  margin-top: -1px;
+}
 
 .box-err {
   display: flex;
@@ -6122,7 +6081,7 @@ table .SOLCheck-root {
   color: #8c8c99;
 }
 
-.msg-noti {
+.msg-noti, .msg-err {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6130,9 +6089,14 @@ table .SOLCheck-root {
   padding-left: 32px;
   background: url(../image/icon/ic_msg_noti.svg) no-repeat left center;
 }
-.msg-noti li::before {
+.msg-noti li::before, .msg-err li::before {
   content: "·";
   padding-right: 0.4em;
+}
+
+.msg-err {
+  color: var(--c-error);
+  background: url(../image/icon/ic_msg_err.svg) no-repeat left center;
 }
 
 .msg-terms {
@@ -6155,7 +6119,11 @@ table .SOLCheck-root {
 .hr-comm {
   border: 0;
   border-top: 1px solid rgba(101, 112, 144, 0.1);
-  margin: 8px 0;
+  margin: 12px 0;
+}
+
+.section-outer > .hr-comm {
+  margin: 0;
 }
 
 .mt-g2 {
@@ -6377,6 +6345,9 @@ table .SOLCheck-root {
 .SOLTable-small em {
   color: var(--c-active);
 }
+.SOLTable-small .SOLIconBtn-root {
+  min-height: 28px;
+}
 .SOLTable-small.t--list th {
   padding-left: 8px;
 }
@@ -6557,6 +6528,9 @@ table .SOLCheck-root {
 .service-result-progress.t--issue {
   background-image: url(../image/img/bg_issue_progress.png);
   background-size: 326px;
+}
+.service-result-progress.t--submit {
+  background-image: url(../image/img/bg_submit_progress.png);
 }
 .service-result-progress .progress {
   position: relative;
@@ -7351,4 +7325,30 @@ table .SOLCheck-root {
 .service-public-list .code {
   font-size: var(--font-12);
   color: var(--fc-gray2);
+}
+
+.box-msg .service-public-list {
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.box-msg .service-public-list .list-item {
+  gap: 3px;
+  padding: 0;
+  border-bottom: 0;
+  background: unset;
+  font-size: var(--font-14);
+}
+
+.SOLSnackbar-root .service-public-list {
+  border-top: 0;
+}
+.SOLSnackbar-root .service-public-list .list-item {
+  border-bottom-color: #F4F4F4;
+  padding-left: 40px;
+  background-position-x: left;
+}
+.SOLSnackbar-root .service-public-list .list-item:last-child {
+  border-bottom: 0;
 }

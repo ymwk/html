@@ -7,6 +7,8 @@
   line-height: 18px;
   font-size: var(--font-14);
   text-align: left;
+  word-break: keep-all;
+
   &.mgt-15 {
     margin-top: 15px;
   }
@@ -37,6 +39,10 @@
   &.t--terms {
     [type='checkbox'] {
       border-radius: 50%;
+    }
+
+    .SOLCheck-label {
+      align-items: center;
     }
   }
 

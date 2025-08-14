@@ -203,6 +203,8 @@
   a {
     display: flex;
     align-items: center;
+
+    &.on { color: #3b5dfb }
   }
 
   .ai-post {
@@ -265,13 +267,7 @@
         margin-top: 10px;
       }
     }
-    a {
-      height: 42px;
-
-      &.on {
-        color: #3b5dfb;
-      }
-    }
+    a { height: 42px }
   }
 }
 

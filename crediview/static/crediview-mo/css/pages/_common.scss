@@ -20,6 +20,17 @@
       color: var(--c-active);
     }
   }
+
+  .SOLIconBtn-root {
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0;
+
+    .SOLIcon-root {
+      color: #95989b;
+      margin-top: -1px
+    }
+  }
 }
 
 .box-err {
@@ -76,6 +87,12 @@
   }
 }
 
+.msg-err {
+  @extend .msg-noti;
+  color: var(--c-error);
+  background: url(../image/icon/ic_msg_err.svg) no-repeat left center;
+}
+
 .msg-terms {
   display: flex;
   flex-direction: column;
@@ -96,8 +113,10 @@
 .hr-comm {
   border: 0;
   border-top: 1px solid rgba(101, 112, 144, 0.1);
-  margin: 8px 0;
+  margin: 12px 0;
 }
+
+.section-outer > .hr-comm { margin: 0 }
 
 // 8배수
 .mt-g2 {

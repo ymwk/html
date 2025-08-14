@@ -189,6 +189,9 @@
     background-image: url(../image/img/bg_issue_progress.png);
     background-size: 326px;
   }
+  &.t--submit {
+    background-image: url(../image/img/bg_submit_progress.png);
+  }
 
   .progress {
     position: relative;
@@ -1075,5 +1078,33 @@
   .code {
     font-size: var(--font-12);
     color: var(--fc-gray2);
+  }
+}
+
+.box-msg .service-public-list {
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  .list-item {
+    gap: 3px;
+    padding: 0;
+    border-bottom: 0;
+    background: unset;
+    font-size: var(--font-14)
+  }
+}
+
+.SOLSnackbar-root .service-public-list {
+  border-top: 0;
+
+  .list-item {
+    border-bottom-color: #F4F4F4;
+    padding-left: 40px;
+    background-position-x: left;
+    &:last-child {
+      border-bottom: 0
+    }
   }
 }

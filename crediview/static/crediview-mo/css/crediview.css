@@ -5760,9 +5760,7 @@ table .SOLCheck-root {
 .SOLHeader-root {
   z-index: 998;
   position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  inset: 0 0 auto 0;
   width: 100%;
   max-width: var(--max-w);
   min-width: var(--min-w);
@@ -5894,7 +5892,6 @@ table .SOLCheck-root {
   z-index: 999;
   position: fixed;
   inset: 0;
-  height: 100svh;
   min-width: var(--min-w);
   max-width: var(--max-w);
   margin: 0 auto;

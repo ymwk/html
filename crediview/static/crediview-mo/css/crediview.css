@@ -5895,7 +5895,6 @@ table .SOLCheck-root {
   position: fixed;
   inset: 0;
   height: 100vh;
-  height: 100svh;
   min-width: var(--min-w);
   max-width: var(--max-w);
   margin: 0 auto;

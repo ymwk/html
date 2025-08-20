@@ -1,5 +1,5 @@
 .SOLAlert-root {
-  z-index: 999;
+  z-index: 1002;
   position: fixed;
   inset: 0;
   display: flex;
@@ -41,6 +41,15 @@
 
   .SOLText-desc {
     padding: 0 20px;
+
+    &.s--lg {
+      font-size: var(--font-16);
+      font-weight: 700;
+      color: #404252;
+    }
+
+
+
     &.bold {
       font-size: var(--font-16);
       font-weight: 700;
@@ -55,10 +64,13 @@
   }
 
   .SOLTable-small.t--list {
-    th, td {
-      font-size: var(--font-12)
+    th,
+    td {
+      font-size: var(--font-12);
     }
-    td { width: 80% }
+    td {
+      width: 80%;
+    }
   }
 }
 
@@ -74,10 +86,11 @@
 .SOLAlert-msgbox {
   text-align: center;
   padding: 12px;
-  border-radius: 6px;;
+  border-radius: 6px;
   background-color: var(--c-bg);
   line-height: 1.6;
   font-size: var(--font-12);
+  color: #000;
 
   ul {
     display: flex;
@@ -87,12 +100,20 @@
   }
 
   li {
-    padding-left: 1em;
+    padding: 1px 0 1px 1em;
     text-indent: -0.5em;
     line-height: 1.4;
     &::before {
       content: '· ';
     }
+  }
+
+  .name {
+    display: inline-block;
+    min-width: 50px;
+    color: var(--fc-gray2);
+    padding-right: 10px;
+    text-indent: 0;
   }
 
   .msg-expdate {
@@ -104,11 +125,13 @@
 
     em {
       color: var(--c-error);
-      font-size: var(--font-14)
+      font-size: var(--font-14);
     }
   }
 
-  .SOLTitle-t4 { padding: 6px 0 8px }
+  .SOLTitle-t4 {
+    padding: 6px 0 8px;
+  }
 }
 
 .SOLAlert-msgbox-list {
@@ -116,7 +139,7 @@
   text-align: left;
 
   li::before {
-    content: "·";
+    content: '·';
     padding-right: 6px;
   }
 }
@@ -147,7 +170,7 @@
     padding-left: 0.6em;
 
     &::before {
-      content: "·";
+      content: '·';
       position: absolute;
       left: 0;
       top: 0;

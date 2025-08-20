@@ -18,6 +18,18 @@
   .SOLBtn-root {
     min-width: 80px
   }
+
+  &.s--lg {
+    gap: 12px;
+    .SOLInput-label {
+      font-size: var(--font-16);
+      font-weight: 700;
+      color: var(--fc-default)
+    }
+    .SOLInput-field {
+      font-size: var(--font-15);
+    }
+  }
 }
 
 .SOLInput-label {
@@ -110,7 +122,7 @@
 
 .SOLInput-field {
   position: relative;
-  font-size: var(--font-14);
+  font-size: var(--font-15);
   width: 100%;
   height: 100%;
   padding: 0 var(--form-pd);

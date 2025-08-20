@@ -7806,10 +7806,10 @@ table .SOLCheck-root {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 10px;
   border-bottom: 1px solid var(--tb-border);
-  padding-bottom: 18px;
-  margin-top: 18px;
+  padding-bottom: 16px;
+  margin-top: 16px;
   font-size: var(--font-15);
 }
 .mypage-member-list .list-item:first-child {
@@ -7823,6 +7823,9 @@ table .SOLCheck-root {
   position: absolute;
   top: -2px;
   right: 0;
+}
+.mypage-member-list .SOLSelect-root {
+  margin-top: 4px;
 }
 .mypage-member-list .time {
   font-size: var(--font-12);
